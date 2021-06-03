@@ -13,3 +13,9 @@ module "myec2module"{
 	vpc_security_group_ids = module.mysgmodule.mysgoutput
 	instance_type = var.instance_type
 }
+module "myelbmodule"{
+	source = "github.com/pratheeshdev/modules/elb_module"
+	instances = module.myec2module.myec2output
+	subnets = module.mymodule.myoutput1
+
+}

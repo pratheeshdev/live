@@ -1,2 +1,4 @@
 test/terraform.tfstate
 prod/terraform.tfstate
+prod/.terraform/*
+test/.terraform/*
