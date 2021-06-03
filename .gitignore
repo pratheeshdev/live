@@ -1,2 +1,2 @@
-dev/terraform.tfstate
+test/terraform.tfstate
 prod/terraform.tfstate
