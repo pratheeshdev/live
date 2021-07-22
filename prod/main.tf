@@ -15,7 +15,8 @@ module "myec2module"{
 }
 module "myelbmodule"{
 	source = "github.com/pratheeshdev/modules/elb_module"
-	instances = module.myec2module.myec2output
+	target_id = module.myec2module.myec2output
 	subnets = module.mymodule.myoutput1
+        vpc_id = module.mymodule.myoutput
 
 }
